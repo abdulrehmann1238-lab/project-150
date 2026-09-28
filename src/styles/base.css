@@ -1,0 +1,79 @@
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    color: var(--text-1);
+    background-color: var(--sand-50);
+    scroll-behavior: smooth;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  /* Typography default (EN) */
+  h1, h2, h3 {
+    font-family: var(--font-serif);
+    font-weight: 500;
+  }
+
+  h4, h5, h6 {
+    font-family: var(--font-sans);
+    font-weight: 600;
+  }
+
+  /* Arabic Typography Rules (§6.2) */
+  :lang(ar) {
+    font-family: var(--font-arabic-body);
+    font-size: 106%;
+    line-height: 1.7;
+    letter-spacing: normal !important;
+  }
+
+  :lang(ar) h1,
+  :lang(ar) h2,
+  :lang(ar) h3,
+  :lang(ar) h4 {
+    font-family: var(--font-arabic-heading);
+    letter-spacing: 0 !important;
+  }
+
+  :lang(ar) * {
+    letter-spacing: normal !important;
+  }
+
+  /* Focus ring (§6.1) */
+  :focus-visible {
+    outline: 2px solid var(--saffron-500);
+    outline-offset: 2px;
+  }
+
+  /* Scrollbar subtle styling */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--sand-100);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--sand-300);
+    border-radius: var(--r-full);
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--ink-500);
+  }
+}
+
+/* Reduced Motion (§6.7) */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

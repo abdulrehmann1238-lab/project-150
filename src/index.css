@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+@import "./styles/tokens.css";
+@import "./styles/base.css";
+@import "./styles/rtl.css";
+
+@theme {
+  --color-ink-900: var(--ink-900);
+  --color-ink-700: var(--ink-700);
+  --color-ink-500: var(--ink-500);
+
+  --color-night-900: var(--night-900);
+  --color-night-800: var(--night-800);
+
+  --color-sand-50: var(--sand-50);
+  --color-sand-100: var(--sand-100);
+  --color-sand-200: var(--sand-200);
+  --color-sand-300: var(--sand-300);
+
+  --color-saffron-100: var(--saffron-100);
+  --color-saffron-500: var(--saffron-500);
+  --color-saffron-600: var(--saffron-600);
+
+  --color-rose-500: var(--rose-500);
+
+  --color-text-1: var(--text-1);
+  --color-text-2: var(--text-2);
+  --color-text-3: var(--text-3);
+
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+  --color-error: var(--error);
+  --color-info: var(--info);
+
+  --font-serif: var(--font-serif);
+  --font-sans: var(--font-sans);
+  --font-arabic-heading: var(--font-arabic-heading);
+  --font-arabic-body: var(--font-arabic-body);
+  --font-mono: var(--font-mono);
+}
+
+/* Common container utility */
+.layali-container {
+  width: 100%;
+  max-width: var(--container);
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+}
+@media (max-width: 640px) {
+  .layali-container {
+    padding-inline: 1rem;
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+@keyframes marqueeReverse {
+  0% {
+    transform: translate3d(-50%, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20%, 60% { transform: translateX(-4px); }
+  40%, 80% { transform: translateX(4px); }
+}
+
+.animate-marquee {
+  animation: marquee 45s linear infinite;
+}
+
+.animate-marquee-reverse {
+  animation: marqueeReverse 55s linear infinite;
+}
+

@@ -1,0 +1,72 @@
+:root {
+  --ink-900: #14302F;
+  --ink-700: #1F4745;
+  --ink-500: #3D6B67;
+  --night-900: #0F2322;
+  --night-800: #163130;
+  --sand-50: #FAF7F2;
+  --sand-100: #F3EEE5;
+  --sand-200: #E8E0D2;
+  --sand-300: #D6CBB8;
+  --saffron-100: #F5E7D1;
+  --saffron-500: #C9893A;
+  --saffron-600: #B0742B;
+  --rose-500: #B4553F;
+  --text-1: #1B2422;
+  --text-2: #4A5652;
+  --text-3: #7A857F;
+  --success: #3F7D5B;
+  --warning: #B7822A;
+  --error: #B23A3A;
+  --info: #3A6F8F;
+
+  --s-1: 4px;
+  --s-2: 8px;
+  --s-3: 12px;
+  --s-4: 16px;
+  --s-5: 24px;
+  --s-6: 32px;
+  --s-7: 48px;
+  --s-8: 64px;
+  --s-9: 96px;
+  --s-10: 128px;
+
+  --r-sm: 8px;
+  --r-md: 12px;
+  --r-lg: 20px;
+  --r-full: 999px;
+
+  --sh-1: 0 1px 2px rgba(20, 48, 47, 0.06);
+  --sh-2: 0 4px 16px rgba(20, 48, 47, 0.08);
+  --sh-3: 0 16px 48px rgba(20, 48, 47, 0.14);
+
+  --t-fast: 120ms;
+  --t-med: 240ms;
+  --t-slow: 480ms;
+  --t-cine: 700ms;
+
+  --ease: cubic-bezier(0.2, 0, 0, 1);
+  --ease-emph: cubic-bezier(0.3, 0, 0, 1);
+  --ease-exit: cubic-bezier(0.4, 0, 1, 1);
+
+  --z-sticky: 100;
+  --z-dropdown: 200;
+  --z-drawer: 300;
+  --z-modal: 400;
+  --z-inspector: 450;
+  --z-toast: 500;
+  --z-loader: 1000;
+
+  --container: 1200px;
+  --dir: 1;
+
+  --font-serif: 'Fraunces', Georgia, serif;
+  --font-sans: 'Hanken Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-arabic-heading: 'Readex Pro', system-ui, -apple-system, 'Segoe UI', Tahoma, sans-serif;
+  --font-arabic-body: 'IBM Plex Sans Arabic', system-ui, -apple-system, 'Segoe UI', Tahoma, sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+}
+
+[dir="rtl"] {
+  --dir: -1;
+}
